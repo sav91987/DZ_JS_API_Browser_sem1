@@ -62,7 +62,6 @@ schedules.forEach((element) => {
     );
 });
 
-
 //Запись
 containerSchedulesEl.addEventListener("click", (e) => {
     if (!e.target.classList.contains("subscribe")) {
@@ -88,7 +87,6 @@ containerSchedulesEl.addEventListener("click", (e) => {
     }
 });
 
-
 //Отмена записи
 containerSchedulesEl.addEventListener("click", (e) => {
     if (!e.target.classList.contains("unsubscribe")) {
@@ -102,7 +100,6 @@ containerSchedulesEl.addEventListener("click", (e) => {
         schedule.currentParticipants = --schedule.currentParticipants;
 
         sheduleEl.querySelector(".subscribe").classList.remove("hidden");
-        console.log(schedule);
 
         sheduleEl.querySelector(
             ".shedule__currentParticipants"
